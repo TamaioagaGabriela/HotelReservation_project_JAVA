@@ -31,8 +31,7 @@ Daca suma platita corespunde cu totalul de plata pentru rezervare (numarul de zi
 13. Rezervarea se face in functie de tipul camerei (SINGLE, DOUBLE, TWIN, SUITE) si adresa hotelului in limitele intervalului orar. 
 Daca nicio camera nu este libera in perioada respectiva, atunci rezervarea nu va fi efectuata.
 
-De asemenea, trebuie luate in considerare, regulile implementate prin intermediul bazei de date, respectiv, a cheilor externe FK (spre exemplu, nu pot adauga o camera daca 
-nu exista hotelul respectiv, nu pot efectua o plata daca nu exista o rezervare sau un client). Implicit, la stergerea unui hotel vor fi sterse toate campurilor subordonate lui.
+De asemenea, trebuie luate in considerare, regulile implementate prin intermediul bazei de date, respectiv, a cheilor externe FK (spre exemplu, nu pot adauga o camera daca nu exista hotelul respectiv, nu pot efectua o plata daca nu exista o rezervare sau un client). Implicit, la stergerea unui hotel vor fi sterse toate campurilor subordonate lui.
 
 # Realizarea proiectului:
 1. Crearea celor 6 entitati si a celor 6 clase de tip model;
@@ -40,4 +39,4 @@ nu exista hotelul respectiv, nu pot efectua o plata daca nu exista o rezervare s
 3. Crearea Service-urilor, pentru a implementa regulile de business -> CRUD;
 4. Crearea unor clase de tip Controller pentru a realiza conexiunea dintre service si pagina web;
 5. Crearea claselor prin care vor fi gestionate erorile
-6. Implementarea unor teste unitare pentru Controller si Service.
+6. Implementarea unor teste unitare si de integrare pentru Controller si Service.
